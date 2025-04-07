@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Shop Products</h1>
+
+    <!-- Product Listings -->
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$10</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$20</p>
+        <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>$30</p>
+        <button onclick="addToCart('Product 3', 30)">Add to Cart</button>
+    </div>
+
+    <!-- Cart Button -->
+    <button onclick="openCart()" style="padding: 10px; margin-top: 20px;">View Cart</button>
+
+    <!-- Cart Modal -->
+    <div id="cartModal">
+        <div id="cartModalContent">
+            <h2>Your Cart</h2>
+            <ul id="cartList" class="cart"></ul>
+            <p class="cart-total">Total: $<span id="totalPrice">0</span></p>
+            <button class="close-btn" onclick="closeCart()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Initialize cart from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Function to add item to cart
+        function addToCart(productName, price) {
+            // Create cart item object
+            const cartItem = { productName, price };
+
+            // Add to cart array
+            cart.push(cartItem);
+
+            // Save to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update cart display
+            updateCartDisplay();
+        }
+
+        // Function to open cart modal
+        function openCart() {
+            document.getElementById('cartModal').style.display = 'flex';
+            updateCartDisplay();
+        }
+
+        // Function to close cart modal
+        function closeCart() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+
+        // Function to update cart display
+        function updateCartDisplay() {
+            const cartList = document.getElementById('cartList');
+            const totalPriceElement = document.getElementById('totalPrice');
+            cartList.innerHTML = ''; // Clear current cart items
+
+            let total = 0;
+
+            // Loop through cart and display items
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.classList.add('cart-item');
+                li.textContent = `${item.productName} - $${item.price}`;
+                cartList.appendChild(li);
+                total += item.price;
+            });
+
+            // Update total price
+            totalPriceElement.textContent = total;
+        }
+
+        // Initial call to display cart items when page loads
+        window.onload = updateCartDisplay;
+    </script>
+</body>
+</html>

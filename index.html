@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SareeBiz</title>
+    <link rel="stylesheet" href="./home.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                
+                <li><a href="./cart.html"><i class="fas fa-shopping-cart"></i> Cart (0)</a></li> <!-- Cart link -->
+            </ul>
+        </nav>
+    </header>
+
+    <br><br>
+
+    
+    <main>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to SareeBiz</h1>
+                <p>Shop the finest sarees with exclusive designs and colors.</p>
+                <a href="./gallery.html" class="button">Shop Now</a>
+            </div>
+        </section>
+
+        
+        <section class="features">
+            <h2>Our Features</h2>
+            <div class="features-items">
+                <div class="feature-item">
+                    <img src="./assests/yarn.jpg" alt="Yarn">
+                    <h3>Best Quality Yarn</h3>
+                    <p>Premium materials for every saree.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="./assests/weaving.jpg" alt="Weaving">
+                    <h3>Handloom Weaving</h3>
+                    <p>Crafted with traditional handloom techniques.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="./assests/jarri.jpg" alt="Jarri">
+                    <h3>Best Quality Jarri</h3>
+                    <p>Finely crafted jarri to add elegance.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="./assests/handloom.jpg" alt="Handloom Sarees">
+                    <h3>Variety of Colors</h3>
+                    <p>Choose from a wide range of vibrant colors.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="product-listing">
+            <h2>Featured Products</h2>
+            <div class="product-item">
+                <img src="./assests/image1.jpg" alt="Traditional Red Saree">
+                <h3>Traditional Red Saree</h3>
+                <p>Beautiful handwoven red saree with intricate designs.</p>
+                <span class="price">&#8377 5000</span>
+                <button class="add-to-cart" onclick="updateCart()">Add to Cart</button>
+            
+                <!-- View Full Overview Button -->
+                <button class="view-overview" onclick="openModal('modal1')">View Full Overview</button>
+            </div>
+            
+            <!-- Modal for Product Overview -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Traditional Red Saree</h2>
+                    <img src="./assests/image2.jpg" alt="Traditional Red Saree" class="modal-image">
+                    <p>Beautiful handwoven red saree with intricate designs and vibrant colors. This saree is crafted with the finest materials and designed to suit all occasions.</p>
+                    <span class="price">&#8377 5000</span>
+            
+                    <!-- Video for the saree -->
+                    <video id="video1" width="100%" controls>
+                        <source src="./assests/vedio.mp4" type="vedio/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+            
+            
+            <div class="product-item">
+                <img src="./assests/image22.jpg" alt="Traditional Red Saree">
+                <h3>Traditional Red Saree</h3>
+                <p>Beautiful handwoven red saree with intricate designs.</p>
+                <span class="price">&#8377 5000</span>
+                <button class="add-to-cart" onclick="updateCart()">Add to Cart</button>
+            
+                <!-- View Full Overview Button -->
+                <button class="view-overview" onclick="openModal('modal1')">View Full Overview</button>
+            </div>
+            
+            <!-- Modal for Product Overview -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Traditional Red Saree</h2>
+                    <img src="./assests/image3.jpg" alt="Traditional Red Saree" class="modal-image">
+                    <p>Beautiful handwoven red saree with intricate designs and vibrant colors. This saree is crafted with the finest materials and designed to suit all occasions.</p>
+                    <span class="price">&#8377 5000</span>
+            
+                    <!-- Video for the saree -->
+                    <video id="video1" width="100%" controls>
+                        <source src="./assests/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+            
+            <div class="product-item">
+                <img src="./assests/image16.jpg" alt="Traditional Red Saree">
+                <h3>Traditional Red Saree</h3>
+                <p>Beautiful handwoven red saree with intricate designs.</p>
+                <span class="price">&#8377 5000</span>
+                <button class="add-to-cart" onclick="updateCart()">Add to Cart</button>
+            
+                <!-- View Full Overview Button -->
+                <button class="view-overview" onclick="openModal('modal1')">View Full Overview</button>
+            </div>
+            
+            <!-- Modal for Product Overview -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Traditional Red Saree</h2>
+                    <img src="./assests/image1.jpg" alt="Traditional Red Saree" class="modal-image">
+                    <p>Beautiful handwoven red saree with intricate designs and vibrant colors. This saree is crafted with the finest materials and designed to suit all occasions.</p>
+                    <span class="price">&#8377 5000</span>
+            
+                    <!-- Video for the saree -->
+                    <video id="video1" width="100%" controls>
+                        <source src="./assests/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+            
+            <div class="product-item">
+                <img src="./assests/image1.jpg" alt="Traditional Red Saree">
+                <h3>Traditional Red Saree</h3>
+                <p>Beautiful handwoven red saree with intricate designs.</p>
+                <span class="price">&#8377 5000</span>
+                <button class="add-to-cart" onclick="updateCart()">Add to Cart</button>
+            
+                <!-- View Full Overview Button -->
+                <button class="view-overview" onclick="openModal('modal1')">View Full Overview</button>
+            </div>
+            
+            <!-- Modal for Product Overview -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Traditional Red Saree</h2>
+                    <img src="./assests/image1.jpg" alt="Traditional Red Saree" class="modal-image">
+                    <p>Beautiful handwoven red saree with intricate designs and vibrant colors. This saree is crafted with the finest materials and designed to suit all occasions.</p>
+                    <span class="price">&#8377 5000</span>
+            
+                    <!-- Video for the saree -->
+                    <video id="video1" width="100%" controls>
+                        <source src="./assests/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <script>
+                // Function to open the modal and play the video
+                function openModal(modalId, videoId) {
+                    const modal = document.getElementById(modalId);
+                    const video = document.getElementById(videoId);
+                    
+                    modal.style.display = "block"; // Show the modal
+                    video.play(); // Start playing the video
+                }
+                
+                // Function to close the modal and stop the video
+                function closeModal(modalId) {
+                    const modal = document.getElementById(modalId);
+                    const video = modal.querySelector('video');
+                    
+                    modal.style.display = "none"; // Hide the modal
+                    video.pause(); // Pause the video
+                    video.currentTime = 0; // Reset the video to the beginning
+                }
+                
+                // Close modal if the user clicks outside of the modal content
+                window.onclick = function(event) {
+                    if (event.target.classList.contains("modal")) {
+                        closeModal(event.target.id);
+                    }
+                }
+                </script>
+                
+            
+    </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 SareeBiz. All rights reserved.</p>
+    </footer>
+
+    

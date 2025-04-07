@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SareeBiz - Shopping App</title>
+    <link rel="stylesheet" href="./home.css">
+    <script>
+        let cartCount = 0;
+
+        function updateCart() {
+            cartCount++;
+            document.getElementById("cart-link").innerText = `Cart (${cartCount})`;
+        }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">SareeBiz</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./cart.html" id="cart-link">Cart (0)</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="features">
+        <h2>Gallery</h2>
+        <div class="product-items">
+            
+            <div class="product-item">
+                <img src="./assests/image1.jpg" alt="Traditional Red Saree">
+                <h3>Traditional Red Saree</h3>
+                <p>Beautiful handwoven red saree with intricate designs.</p>
+                <span class="price">&#8377 5000</span>
+                <button class="add-to-cart" onclick="updateCart()">Add to Cart</button>
+            
+                <!-- View Full Overview Button -->
+                <button class="view-overview" onclick="openModal('modal1')">View Full Overview</button>
+            </div>
+            
+            <!-- Modal for Product Overview -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Traditional Red Saree</h2>
+                    <img src="./assests/image1.jpg" alt="Traditional Red Saree" class="modal-image">
+                    <p>Beautiful handwoven red saree with intricate designs and vibrant colors. This saree is crafted with the finest materials and designed to suit all occasions.</p>
+                    <span class="price">&#8377 5000</span>
+            
+                    <!-- Video for the saree -->
+                    <video id="video1" width="100%" controls>
+                        <source src="./assests/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+            
+            
+            <div class="product-item">
+                <img src="./assests/image2.jpg" alt="Traditional Red Saree">
+                <h3>Traditional Red Saree</h3>
+                <p>Beautiful handwoven red saree with intricate designs.</p>
+                <span class="price">&#8377 5000</span>
+                <button class="add-to-cart" onclick="updateCart()">Add to Cart</button>
+            
+                <!-- View Full Overview Button -->
+                <button class="view-overview" onclick="openModal('modal1')">View Full Overview</button>
+            </div>
+            
+            <!-- Modal for Product Overview -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Traditional Red Saree</h2>
+                    <img src="./assests/image2.jpg" alt="Traditional Red Saree" class="modal-image">
+                    <p>Beautiful handwoven red saree with intricate designs and vibrant colors. This saree is crafted with the finest materials and designed to suit all occasions.</p>
+                    <span class="price">&#8377 5000</span>
+            
+                    <!-- Video for the saree -->
+                    <video id="video1" width="100%" controls>
+                        <source src="./assests/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+            
+            <div class="product-item">
+                <img src="./assests/image22.jpg" alt="Traditional Red Saree">
+                <h3>Traditional Red Saree</h3>
+                <p>Beautiful handwoven red saree with intricate designs.</p>
+                <span class="price">&#8377 5000</span>
+                <button class="add-to-cart" onclick="updateCart()">Add to Cart</button>
+            
+                <!-- View Full Overview Button -->
+                <button class="view-overview" onclick="openModal('modal1')">View Full Overview</button>
+            </div>
+            
+            <!-- Modal for Product Overview -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Traditional Red Saree</h2>
+                    <img src="./assests/image22.jpg" alt="Traditional Red Saree" class="modal-image">
+                    <p>Beautiful handwoven red saree with intricate designs and vibrant colors. This saree is crafted with the finest materials and designed to suit all occasions.</p>
+                    <span class="price">&#8377 5000</span>
+            
+                    <!-- Video for the saree -->
+                    <video id="video1" width="100%" controls>
+                        <source src="./assests/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+            
+            <div class="product-item">
+                <img src="./assests/image16.jpg" alt="Traditional Red Saree">
+                <h3>Traditional Red Saree</h3>
+                <p>Beautiful handwoven red saree with intricate designs.</p>
+                <span class="price">&#8377 5000</span>
+                <button class="add-to-cart" onclick="updateCart()">Add to Cart</button>
+            
+                <!-- View Full Overview Button -->
+                <button class="view-overview" onclick="openModal('modal1')">View Full Overview</button>
+            </div>
+            
+            <!-- Modal for Product Overview -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Traditional Red Saree</h2>
+                    <img src="./assests/image16.jpg" alt="Traditional Red Saree" class="modal-image">
+                    <p>Beautiful handwoven red saree with intricate designs and vibrant colors. This saree is crafted with the finest materials and designed to suit all occasions.</p>
+                    <span class="price">&#8377 5000</span>
+            
+                    <!-- Video for the saree -->
+                    <video id="video1" width="100%" controls>
+                        <source src="./assests/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Saree Bizz. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
